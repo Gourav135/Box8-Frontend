@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+body {
+  /* line-height: 1.5; */
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+}
+.navbar{
+  top: 0%;
+    /* border: solid black 1px; */
+    display: flex;
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    /* overflow: visible; */
+    
+}
+#margin123{
+  height: 20px;
+}
+#box8{
+  width: 100px;
+  height: 37px;
+  margin: auto;
+  margin-left: 60px;
+  margin-top: 25px;
+  
+}
+#box8,#video,#icon,p:hover{
+  cursor: pointer;
+}
+
+#video{
+  height: 26px;
+  width: 330px;
+  margin: auto;
+  font-size: 18px;
+  border: 1px solid rgb(223, 219, 210);
+  
+}
+#Right_side{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-left: 28%;
+    /* margin: auto; */
+    text-align: center;
+  }
+  #left_side{
+    display: flex;
+    gap: 15px;
+  }
+#icon{
+    width: 19px;
+    height: 19px;
+    margin: auto;
+}
+p{
+    font-size: 18px;
+    margin: auto;
+   
+}
+#line{
+border-left: 1px solid rgb(165, 149, 149) ;
+height: 20px;
+margin: auto;
+}
+#favourites,#cart,#deals,#eatclub,#sign{
+  gap: 7px;
+}
+#favourites:hover,#cart:hover,#deals:hover,#eatclub:hover,#sign:hover{
+ color: red;
+}
+/* .sub_deals{
+ 
+  width: 122px;
+  height: 120px;
+  border: black solid 1px;
+  margin-top: 50px;
+  position: absolute;
+  
+
+} */
+/* #deals:hover .sub_delas {
+  display: block;
+  position: absolute;
+  padding-top: 10px;
+
+
+} */
+/* .sub_deals:not(:empty){
+  padding-top: 8px;
+  padding-bottom: 8px;
+} */
+#Right_side,#eatclub,#deals,#favourites,#cart,#sign{
+  display: flex;
+}
