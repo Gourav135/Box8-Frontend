@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <script defer src="./scripts/all.min.js"></script>
+
+</head>
+<body>
+    <div id="navbar" ></div>
+    <div id="paymentpage">
+        <div>
+            <div>
+                <br>
+            <h2>2.PAYMENT OPTION</h2><br>
+            <p>Please select your payment option</p><br>
+            <hr><br>
+            <div class="cardselect">
+                <div>
+                    <div><input type="radio" name="drone" checked></div>
+                    <div>Credit/Debit Card</div>
+                </div>
+                <div>
+                    <div><input type="radio" name="drone"></div>
+                    <div>NetBanking</div>
+                </div>
+                <div>
+                    <div><input type="radio" name="drone"></div>
+                    <div>UPI</div>
+                </div>
+            </div><br>
+            </div>
+            <hr><br>
+            <h2>REGISTER NEW CARD</h2><br>
+            <p>In case you encounter an issue with your credit/ debit card payment, please contact customer care for further support. </p>
+            <br><br>
+            <div>
+                <div class="cardnumber1">
+                    <label class="cardlabel1" for="">CARD NUMBER</label>
+                    <input id="cardno" class="input1" type="number">
+                </div><br>
+                <div class="cardnumber1">
+                    <label class="cardlabel1" for="">EXPIRATION DATE</label>
+                    <input id="expdate" class="input1" type="text" placeholder="MM/YY">
+                </div><br>
+                <div class="cardnumber1">
+                    <label class="cardlabel1" for="">SECURITY CODE</label>
+                    <input id="securitycode" class="input1" type="number" placeholder="3 digits">
+                </div><br>
+                <div class="cardnumber1">
+                    <label class="cardlabel1" for="">FULL NAME</label>
+                    <input id="fullname" class="input1" type="text">
+                </div><br><br>
+                <div class="checkbox1">
+                    <input id="check1" type="checkbox">
+                    <p id="check">Save or update card information</p>
+                </div><br>
+                <p id="error1"></p>
+               <button onclick="payment()" id="continue">Make Payment</button><br><br><br>
+                
+            </div>
+
+        </div>
+        <div class="paymentpart">
+            
+        </div>
+    </div>
+    <div id="footerdiv"></div>
+    <script src="./scripts/payment.js"></script>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+
+    let nav = document.getElementById("navbar");
+
+    nav.innerHTML = navbar();
+
+    let footerdiv = document.getElementById("footerdiv");
+    footerdiv.innerHTML=footer();
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href = "signin.html"
+    })
+</script>

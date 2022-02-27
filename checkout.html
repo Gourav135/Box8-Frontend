@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <script defer src="./scripts/all.min.js"></script>
+
+</head>
+
+<body>
+    <div id="navbar" ></div>
+    <div class="checkout1">
+        <br>
+        <h1>CHECKOUT</h1><br><br>
+        <div id="pricetabflex">
+            <div id="homeadd">
+                <h1 style="margin: 30px 0px 80px 30px;">1.Billing Address</h1>
+               <div>First Name: <input id="first" type="text"></div>
+               <div>Last Name: <input id="last" type="text"></div>
+               <div>Phone No: <input id="phoneno" type="number"></div>
+               <div>Address: <input id="add" type="text"></div>
+               <div>City: <input id="city" type="text"></div>
+               <div>State: <input id="state" type="text"></div>
+               <div>Pincode: <input id="pincode" type="number"></div>
+               <p id="error"></p><br>
+               <button id="paymentbtn" onclick="address()">Proceed To Payment</button>
+            </div>
+            <div class="checkoutpart">
+                
+            </div>
+        </div>
+    </div>
+    <div id="footerdiv"></div>
+    <script src="./scripts/checkout.js"></script>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+
+    let nav = document.getElementById("navbar");
+
+    nav.innerHTML = navbar();
+
+    let footerdiv = document.getElementById("footerdiv");
+    footerdiv.innerHTML=footer();
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href = "signin.html"
+    })
+</script>

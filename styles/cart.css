@@ -1,0 +1,86 @@
+#shopping{
+    margin: 70px;
+}
+#margin234{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+#cart12{
+    display: flex;
+    justify-content: space-between;
+}
+#cartdiv1{
+    margin: 50px 0px 0px 4%;
+    width: 45%;
+    font-size: 25px;
+}
+#cartdiv2{
+    margin: 50px 4% 0px 0px;
+    width: 25%;
+    border: 1px solid gray;
+    padding-left: 20px;
+    height: 480px;
+}
+#main_div{
+    border: 1px solid grey;
+    height: 250px;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+#div11{
+    width: 32%;
+}
+#meal_img{
+    width: 100%;
+    height: 100%;
+}
+#div22{
+    width: 58%;
+}
+#div22>p{
+    font-size: 22px;
+    margin: 10px 0px;
+}
+#div33{
+    font-size: 20px;
+    border: 1px solid;
+    width: 7%;
+    height: 40px;
+    text-align: center;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#div111>p{
+    font-size: 22px;
+    margin: 10px 0px;
+    margin: 20px 0px;
+}
+.div222>p{
+    font-size: 22px;
+    margin: 20px 0px;
+    margin-right: 20px;
+}
+#div111{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.div222{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 10px 0px;
+    margin-right: 20px;
+}
+#btn1{
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 25px;
+    margin: auto;
+    color: white;
+    background-color: red;
+    border: none;
+}

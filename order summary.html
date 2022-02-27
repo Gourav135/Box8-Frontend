@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/order summary.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <script defer src="./scripts/all.min.js"></script>
+
+</head>
+<body>
+    <div id="navbar" ></div>
+    <div class="orderflex">
+        <div class="ordersummary">
+            <br>
+            <h1>Your Order Confirmed!</h1>
+            <br>
+            <h3>Hi Whitney,</h3>
+            <h3>Your order has been confirmed and will be shipping soon</h3><br><hr><br>
+            
+            <h2 id="name">a</h2>
+            <h2 id="phoneno">a</h2>
+            <h2 id="address">a</h2>
+            <br><br>
+            <div class="checkoutpart">
+                
+            </div>
+            
+        </div>
+        <div>
+            <a href="index.html"><button id="shopp">CONTINUE SHOPPING</button></a>
+        </div>
+    </div>
+    <div id="footerdiv"></div>
+    <script src="./scripts/order summary.js"></script>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+
+    let nav = document.getElementById("navbar");
+
+    nav.innerHTML = navbar();
+
+    let footerdiv = document.getElementById("footerdiv");
+    footerdiv.innerHTML=footer();
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href = "signin.html"
+    })
+</script>

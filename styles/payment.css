@@ -1,0 +1,97 @@
+#paymentpage{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+#paymentpage>:nth-child(1){
+    border: 1px solid black;
+    padding: 20px;
+}
+#paymentpage>:nth-child(2){
+    border: 1px solid gray;
+    padding: 20px;
+    height: 450px;
+}
+.checkoutpart0{
+    display: flex;
+}
+#totalitsms{
+    padding-top: 18px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.checkoutpart2{
+    display: flex;
+    justify-content: space-between;
+}
+.checkoutpart1{
+    display: flex;
+    justify-content: space-between;
+}
+.checkoutpart3{
+    display: flex;
+    justify-content: space-between;
+}
+#totalpriceshipping{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+#paymentpage>:nth-child(1){
+    width: 600px;
+    padding: 2px 20px 0px;
+}
+.cardselect{
+    display: flex;
+}
+.cardselect>:nth-child(1){
+    display: flex;
+    margin-right: 30px;
+}
+.cardselect>:nth-child(2){
+    display: flex;
+    margin-right: 30px;
+}
+.cardselect>:nth-child(3){
+    display: flex;
+}
+.cardnumber1{
+    display: flex;
+    justify-content: space-between;
+}
+.cardlabel1{
+    padding-top: 15px;
+}
+.input1{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+}
+#continue{
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#div111{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.div222{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
