@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/signin.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <script defer src="./scripts/all.min.js"></script>
+
+</head>
+
+<body>
+    <div id="navbar" ></div>
+    <!-- <div id="body1"></div> -->
+
+    <div id="content">
+        <div id="right">
+            <img src="https://assets.box8.co.in/images/Box8Banner.jpg" alt="">
+        </div>
+        <div id="left">
+            <div>
+                <h1>SIGN IN</h1>
+                <input id="email" type="email" placeholder="Enter email"><br>
+                <input type="password" id="pass" placeholder="Enter Password"><br>
+
+                <p id="display_errors"></p>
+
+                <button id="cont" onclick="signin()">CONTINUE</button>
+                <p>--------------- or ----------------</p>
+                <button id="logo">
+                    <div><img
+                            src="https://us.123rf.com/450wm/kornienko/kornienko1611/kornienko161100200/66047248-chisinau-moldova-november-16-2016-google-logo-on-pc-screen-google-it-is-the-largest-internet-search-.jpg?ver=6"
+                            alt=""> </div>
+                    <div id="gle">Sign in with Google</div>
+                </button>
+
+                <p>By signing in,you agree to the <span>Terms and Conditions</span></p>
+            </div>
+
+        </div>
+    </div>
+    <div id="footerdiv"></div>
+</body>
+
+</html>
+<script src="./scripts/signin.js"></script>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+
+
+    let nav = document.getElementById("navbar");
+
+    nav.innerHTML = navbar();
+
+    let footerdiv = document.getElementById("footerdiv");
+    footerdiv.innerHTML=footer();
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
+
+</script>
