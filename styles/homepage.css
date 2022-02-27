@@ -1,0 +1,340 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+#slider{  
+    width:100%;  
+    height:400px;  
+    overflow:hidden;  
+}  
+.slides{  
+    display:block;  
+    width:7000px;  
+    height:400px;  
+    margin-left:0;  
+    padding:0;  
+}  
+.slide{  
+    float:left;  
+    list-style-type:none;  
+    width:10%;  
+    height:400px;  
+}
+.imgggg{  
+    width:100%;  
+    height:100%;  
+}  
+
+
+
+
+#fullcolor{
+    background-color: #fff2ee;
+}
+#mealinfo{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+#lftinfo{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+}
+#lftinfo > div{
+    background-color: #ffffff;
+    padding-left: 20px;
+    line-height: 40px;
+    color: rgb(77, 55, 55);
+}
+#lftinfo > div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+#spid{
+    font-weight: 500;
+    font-size: 30px;
+}
+#fstdiv{
+    font-size: 20px;
+}
+#logoo{
+    color: #ce5b5d;
+    font-size: 35px;
+    margin-left: 20px;
+}
+#tstress{
+    font-size: 38px;
+    font-weight: 500;
+    width: 55%;
+}
+#tstress2{
+    font-size: 30px;
+    width: 80%;
+    line-height: 40px; 
+}
+#ritinfo{
+    width: 48%;
+    margin-top: 40px;
+}
+
+
+
+
+#font1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: #282c3f;
+    margin-bottom: 20px;
+}
+
+#tordernow{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+#tordernow > div :hover{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .2s linear;
+}
+
+#t13items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.foodimage{
+    width: 100%;
+}
+
+
+
+
+
+
+#shappy{
+    background-color: #fff2ee;
+    margin-top: 80px;
+}
+#font2{
+    margin: auto;
+    width: 35%;
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color: #282c3f;
+    margin-bottom: 20px;
+}
+#tfeedback{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 20px;
+}
+.feedimg{
+    width: 100%;
+}
+
+
+
+
+#font3{
+    margin: auto;
+    width: 35%;
+    padding-top: 80px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color: #282c3f;
+    margin-bottom: 20px;
+
+}
+#strendingdiv{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 20px;
+
+}
+.strendingimg{
+    width: 100%;
+}
+
+
+
+
+
+#tdoubet{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+}
+#ttext{
+    width:34%;
+    margin-top: 60px;
+    
+}
+#ttext1{
+    font-size: 33px;
+    font-weight: bold;
+    width: 80%;
+}
+#ttext2{
+    color: #362c2b;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 40px;
+}
+#ttext3{
+    color: #362c2b;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 40px;
+
+}
+
+
+
+#tsamllbig{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#coma{
+    width: 20%;
+    height: 20%;
+    margin-top: 100px;
+}
+.bigsamllimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+#bigsamllimg1{
+    width: 70%;
+    height: 270px;
+    margin-top: 90px;
+    margin-left: 70px;
+}
+#bigsamllimg2{
+    width: 100%;
+    height: 350px;
+}
+#bigsamllimg3{
+    width: 60%;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+#bigsamllimg4{
+    width: 70%;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+
+
+#tnews{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+#ttnews{
+    margin: auto;
+    width: 35%;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    color: #282c3f;
+    margin-bottom: 20px;
+
+}
+#newstag{
+    display: flex;
+    justify-content: space-around;
+}
+#newstag >div :hover{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .2s linear;
+} 
+
+
+
+
+#toff{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: #fff2ee;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+#tcoupen{
+    width: 40%;
+    padding-left: 90px;
+
+}
+#ct1{
+    font-size: 27px;
+    padding-top: 50px;
+}
+#ct2{
+    font-size: 32px;
+    padding-top: 30px;
+    font-weight: 500;
+    width: 50%;
+}
+#ct3{
+    border: 1px dashed black;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+#appdownload{
+    display: flex;
+    margin-top: 20px;
+}
+#playstore{
+    margin-left: 10px;
+}
+#half1{
+    width: 30%;
+    height: 400px;
+}
+#half2{
+    width: 30%;
+    height: 400px;
+
+}
+.halfsetimg{
+    width: 100%;
+    height: 100%;
+}
+#halfmob{
+    width: 49%;
+    display: flex ;
+    justify-content: space-around;
+}
+
