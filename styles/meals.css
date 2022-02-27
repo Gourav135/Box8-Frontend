@@ -1,0 +1,258 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+#container{
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 1% 1.7%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 6.5%;
+}
+
+/* styling for sidebar ------------------------------------------------------------ */
+
+#container > #sidebar{
+    /* border: 1px solid red; */
+    width: 14%;
+    position: fixed;
+    left: 2%;
+    padding-right: 1.4%;
+}
+#container > #sidebar > h1{
+    padding: 4%;
+    margin: 2% 0%;
+}
+#container > #sidebar > a{
+    /* border: 1px solid green; */
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+#container > #sidebar > a:hover{
+    background-color: #fedfe5;
+}
+#container > #sidebar > a:focus{
+    border-left: 3px solid #ed0331;
+    background-color: #f8f9fa;
+}
+#container > #sidebar > a > *{
+    /* border: 1px solid red; */
+}
+#container > #sidebar > a > img{
+    width: 15%;
+    margin-right: 5%;
+}
+#container > #sidebar > a > div{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#container > #sidebar > a > div > *{
+    /* border: 1px solid black; */
+}
+#container > #sidebar > a > div > span:first-child{
+    color: black;
+}
+#container > #sidebar > a > div > span:last-child{
+    color: grey;
+}
+
+/* styling for meals_box -------------------------------------------------------- */
+
+#container > #meals_box{
+    /* border: 1px solid red; */
+    width: 85.2%;
+    padding-left: 2%;
+    border-left: 1px solid gray;
+}
+#container > #meals_box > div{
+    /* border: 1px solid black; */
+    margin-bottom: 5%;
+}
+#container > #meals_box > div > div{
+    /* border: 1px solid red; */
+}
+#container > #meals_box > div > div:first-child > h1{
+    margin-bottom: 0%;
+    /* border: 1px solid green; */
+}
+#container > #meals_box > div > div:first-child > p{
+    /* border: 1px solid purple; */
+    margin-top: 0.2%;
+    color: slategray;
+    font-size: 90%;
+}
+#container > #meals_box > div > div:last-child{
+    /* height: 600px; */
+    margin-top: 2.3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 30px 25px;
+
+}
+#container > #meals_box > div > div:last-child > div{
+    /* border: 1px solid purple; */
+    border-radius: 10px;
+    box-shadow: 0 0 18px 0px rgb(223, 221, 221);
+}
+#container > #meals_box > div > div:last-child > div > img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+#container > #meals_box > div > div:last-child > div > #mealName_box{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin-top: 2%;
+}
+#container > #meals_box > div > div:last-child > div > #mealName_box > *{
+    /* border: 1px solid green; */
+}
+#container > #meals_box > div > div:last-child > div > #mealName_box > h4{
+    margin: 0%;
+    margin-left: 6px;
+    color: #fc8019;
+    font-size: 115%;
+    cursor: pointer;
+}
+#container > #meals_box > div > div:last-child > div > #priceAndArea{
+    /* border: 1px solid black; */
+    margin-bottom: 6%;
+    padding: 0% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#container > #meals_box > div > div:last-child > div > #priceAndArea > #mealPrice_box{
+    /* border: 1px solid red; */
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#container > #meals_box > div > div:last-child > div > #priceAndArea > span#area{
+    border: 1px solid #ed0331;
+    border-radius: 4px;
+    color: #ed0331;
+    font-size: 90%;
+    letter-spacing: 2px;
+    padding: 1% 4%;
+    cursor: pointer;
+}
+#container > #meals_box > div > div:last-child > div > div#cart_btn{
+    /* border: 1px solid black; */
+    margin: 0% 3%;
+    margin-bottom: 9%;
+    padding: 2%;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 130%;
+    font-weight: bold;
+    background-color: #ed0331;
+    color: white;
+    cursor: pointer;
+}
+#container > #meals_box > div > div:last-child > div > div#cart_btn:hover{
+    background-color: #8a0721;
+}
+#container > #meals_box > div > div:last-child > div > div#cart_btn:active{
+    background-color: #ed0331;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box{
+    /* border: 1px solid green; */
+    margin: 0% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#fav{
+    width: 15px;
+    height: 15px;
+    background-color: #f8b4c2;
+    position: relative;
+    transform: rotate(-45deg);
+    margin-left: 1.5%;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#fav::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: inherit;
+    position: absolute;
+    border-radius: 50%;
+    top: -50%;
+    /* border-top: 1.5px solid red; */
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#fav::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: inherit;
+    position: absolute;
+    border-radius: 50%;
+    right: -50%;
+    /* border-right: 1.5px solid red; */
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box{
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span{
+    border: 1px solid slategray;
+    padding: 0% 4%;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_increment{
+    font-weight: bolder;
+    color: slategray;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_increment:hover{
+    background-color: slategray;
+    color: white;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_increment:active{
+    background-color: white;
+    color: slategray;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_decrement{
+    font-weight: bolder;
+    color: slategray;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_decrement:hover{
+    background-color: slategray;
+    color: white;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_decrement:active{
+    background-color: white;
+    color: slategray;
+}
+#container > #meals_box > div > div:last-child > div > div#favQty_box > div#qty_box > span#qty_count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    border-right: none;
+    color: grey;
+    padding: 0% 6%;
+}
