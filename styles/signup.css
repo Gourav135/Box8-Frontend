@@ -1,0 +1,14 @@
+#left>div>input{
+    
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+    padding: 20px;
+    border: transparent;
+    border-bottom: 1px solid red;
+}
+p{
+    margin-top: 40px;
+    font-size: 14px;
+}
