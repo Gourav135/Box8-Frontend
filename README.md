@@ -2,7 +2,7 @@
 
 <p> Box8 is a Online food ordering website where you can order different items of food through online.You can filter the food items by category, by food Name etc..You can add the food items in cart-page and wishlist then order the food items by checking out.<p/>
 
-Website link -https://mednear.netlify.app
+Website link -https://dreamy-payne-e416f2.netlify.app/
 
 ---
 # Welcome :wave:
