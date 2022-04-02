@@ -38,7 +38,7 @@ async function signup()
     user_data = JSON.stringify(user_data);
 
     try{
-        const register_url = "http://localhost:3010/register";
+        const register_url = "https://box8.herokuapp.com/register";
         const response = await fetch(register_url, {
             method : "POST", 
             body : user_data,

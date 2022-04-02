@@ -1,7 +1,7 @@
 
 var getcartitems = async() => {
     try{
-        let url = `http://localhost:3010/carts/user/${localStorage.getItem("userId")}`;
+        let url = `https://box8.herokuapp.com/carts/user/${localStorage.getItem("userId")}`;
         const res = await fetch(url);
         const data = await res.json();
         console.log(data)
@@ -135,7 +135,7 @@ else{
     right_div.append(p1,div111,div222,div333,div444,div555,btn1)
     async function deletetask(id){
         try{
-            let url = `http://localhost:3010/carts/${id}`
+            let url = `https://box8.herokuapp.com/carts/${id}`
             await fetch(url,{method:"DELETE"});
             location.reload();
         }catch(e){

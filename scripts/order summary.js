@@ -2,7 +2,7 @@
 
 var getcartitems = async() => {
     try{
-        let url = `http://localhost:3010/carts/user/${localStorage.getItem("userId")}`;
+        let url = `https://box8.herokuapp.com/carts/user/${localStorage.getItem("userId")}`;
         const res = await fetch(url);
         const data = await res.json();
         console.log(data)
