@@ -259,7 +259,7 @@ async function addToCart(event_obj)
     cart = JSON.stringify(cart);
 
     try{
-        const cart_url = "http://localhost:3010/carts";
+        const cart_url = "https://box8.herokuapp.com/carts";
         const response = await fetch(cart_url, {
             method : "POST", 
             body : cart,
@@ -278,7 +278,7 @@ async function addToCart(event_obj)
 
 async function change_cartBtn_color(){
     try{
-        const cart_url = `http://localhost:3010/carts/user/${localStorage.getItem("userId")}`;
+        const cart_url = `https://box8.herokuapp.com/carts/user/${localStorage.getItem("userId")}`;
         const response = await fetch(cart_url, {
             method : "GET"
         });

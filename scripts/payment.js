@@ -83,7 +83,7 @@ async function payment(){
     }
     else{
         try{
-            let url = `http://localhost:3010/carts/user/${localStorage.getItem("userId")}`
+            let url = `https://box8.herokuapp.com/carts/user/${localStorage.getItem("userId")}`
             await fetch(url,{method: "DELETE"})
             window.location.href = "order summary.html";
         }
